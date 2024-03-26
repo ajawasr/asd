@@ -14,37 +14,39 @@ html {
 }
 
 .top-bar a {
-    color: white!important;
-    text-decoration: none!important;
-    font-size: 1.1rem!important;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
 }
 
 /*============= NAVIGATION =============*/
 
 .navbar-brand img {
     height: 3rem;
-  }
-  
-  .navbar {
-    background: #EE0000!important;
-    font-size: 1.15rem!important;
-    font-weight: 600!important;
-    letter-spacing: .1rem!important;
-    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .3)!important;
-    z-index: 1!important;
-  }
-  
-  .nav-item {
-    padding: .5rem!important;
-  }
-  .nav-link {
-    color: white!important;
-    text-decoration: none!important
-  }
-  .nav-link.active, 
-  .nav-link:hover {
-    color: white!important;
-  } 
+}
+
+.navbar {
+    background: #EE0000 !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    letter-spacing: .1rem !important;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .3) !important;
+    z-index: 1 !important;
+}
+
+.nav-item {
+    padding: .5rem !important;
+}
+
+.nav-link {
+    color: white !important;
+    text-decoration: none !important
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: white !important;
+}
 
 
 /* The side navigation menu */
@@ -56,47 +58,90 @@ html {
     position: fixed;
     height: 100%;
     overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block!important;
-    color: black!important;
-    padding: 16px!important;
-    text-decoration: none!important;
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    background-color:#007AFF;
-    color: white!important;
-    color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block !important;
+    color: black !important;
+    padding: 16px !important;
+    text-decoration: none !important;
+}
+
+/* Active/current link */
+.sidebar a.active {
     background-color: #007AFF;
-    color: white!important;
+    color: white !important;
     color: white;
-  }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #007AFF;
+    color: white !important;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
-  }
-  
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
     .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* remove default outline from buttons */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    text-align: center;
+    width: 40%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+    .nav-item {
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+}
 
 body,
 div,
